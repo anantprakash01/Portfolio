@@ -13,9 +13,9 @@ export default function TopContainer() {
     <div>
       <section
         id="hero"
-        class="d-flex flex-column justify-content-center align-items-center border border-red"
+        className="d-flex flex-column justify-content-center align-items-center border border-red"
       >
-        <div class="hero-container">
+        <div className="hero-container">
           <h1>Anant Prakash</h1>
           <p>
             I{" "}
@@ -36,7 +36,7 @@ export default function TopContainer() {
           <a href="https://www.linkedin.com/in/anant-prakash-331870192/"><LinkedInIcon className='test' /></a>
           <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAnant_Pritam_07"><TwitterIcon className='test'/></a>
           <a href="https://www.instagram.com/ap__originals/"><InstagramIcon className='test'/></a>
-          <a href=""><FacebookIcon className='test'/></a>
+          <a href="#"><FacebookIcon className='test'/></a>
           
           
           

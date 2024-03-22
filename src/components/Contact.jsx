@@ -3,31 +3,31 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-       <section id="contact" class="contact" style={{paddingTop:"70px"}}>
-      <div class="container">
+       <section id="contact" className="contact" style={{paddingTop:"70px"}}>
+      <div className="container">
 
-        <div class="section-title">
+        <div className="section-title">
           <h2>Contact</h2>
         </div>
 
-        <div class="row" data-aos="fade-in">
+        <div className="row" data-aos="fade-in">
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
+          <div className="col-lg-5 d-flex align-items-stretch">
+            <div className="info">
+              <div className="address">
+                <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
                 <p>04-06/07 Narayanpur, Darbhanga-847239</p>
               </div>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
+              <div className="email">
+                <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
                 <p>anantprakash09901@gmail.com</p>
               </div>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
+              <div className="phone">
+                <i className="bi bi-phone"></i>
                 <h4>Call:</h4>
                 <p>+91 7079698562</p>
               </div>
@@ -37,32 +37,32 @@ const Contact = () => {
 
           </div>
 
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required/>
+          <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" className="php-email-form">
+              <div className="row">
+                <div className="form-group col-md-6">
+                  <label htmlFor="name">Your Name</label>
+                  <input type="text" name="name" className="form-control" id="name" required/>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required/>
+                <div className="form-group col-md-6">
+                  <label htmlFor="name">Your Email</label>
+                  <input type="email" className="form-control" name="email" id="email" required/>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required/>
+              <div className="form-group">
+                <label htmlFor="name">Subject</label>
+                <input type="text" className="form-control" name="subject" id="subject" required/>
               </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+              <div className="form-group">
+                <label htmlFor="name">Message</label>
+                <textarea className="form-control" name="message" rows="10" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div className="my-3">
+                <div className="loading">Loading</div>
+                <div className="error-message"></div>
+                <div className="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div className="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
 
