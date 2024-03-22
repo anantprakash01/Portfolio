@@ -13,7 +13,7 @@ export default function TopContainer() {
     <div>
       <section
         id="hero"
-        className="d-flex flex-column justify-content-center align-items-center border border-red"
+        className="d-flex flex-column justify-content-center align-items-center border border-red" style={{overflow:"hidden"}}
       >
         <div className="hero-container">
           <h1>Anant Prakash</h1>
@@ -31,7 +31,7 @@ export default function TopContainer() {
           {/* <span><Cursor/></span> */}
           </p>
         </div>
-        <div className='social-cntr'>
+        <div className='social-cntr' id='ic'>
           <a href="https://github.com/anantprakash01"><GitHubIcon className='test' /></a>
           <a href="https://www.linkedin.com/in/anant-prakash-331870192/"><LinkedInIcon className='test' /></a>
           <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAnant_Pritam_07"><TwitterIcon className='test'/></a>
