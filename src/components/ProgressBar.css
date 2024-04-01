@@ -1,0 +1,27 @@
+.progress-bar {
+  position: relative;
+  width: 100%;
+  border: solid blue 1px;
+}
+
+.progress-bar__inner {
+  height: 10px;
+  background-color: #149ddd;
+  width: 0%; 
+}
+
+.progress-bar .skill {
+  padding: 0;
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+}
+
+.val {
+  float: right;
+}
+
+

@@ -7,7 +7,7 @@ const Portfolio = () => {
       <div className="container">
 
         <div className="section-title">
-          <h2>Portfolio</h2>
+          <h2 className='underlined'>Portfolio</h2>
         </div>
 
         <div className="row" data-aos="fade-up">

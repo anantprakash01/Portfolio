@@ -7,7 +7,7 @@ const About = () => {
       <div className='container'>
 
         <div >
-          <h2 className=''>About</h2>
+          <h2 className='underlined'>About</h2>
         </div>
 
         <div className="row mx-3 my-5">
@@ -15,7 +15,7 @@ const About = () => {
             <img src={me} className="img-thumbnail my-2" style={{ width: '230px', height: '300px' }}  alt=""/>
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Java Developer</h3>
+            <h3 className='underlined'>Java Developer</h3>
             <p className="fst-italic">
             I am a Java Developer with a focus on full-stack development. My areas of expertise include Java, Spring Boot, React, MySQL, JavaScript and RESTful APIs. I possess a solid understanding of these technologies and leverage my skillset to create robust and scalable solutions for complex problems.
             </p>
