@@ -1,4 +1,7 @@
 import React from 'react'
+import CallIcon from '@mui/icons-material/Call';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
 
 const Contact = () => {
   return (
@@ -15,19 +18,19 @@ const Contact = () => {
           <div className="col-lg-5 d-flex align-items-stretch">
             <div className="info">
               <div className="address">
-                <i className="bi bi-geo-alt"></i>
+                <i><LocationOnIcon/></i>
                 <h4>Location:</h4>
                 <p>04-06/07 Narayanpur, Darbhanga-847239</p>
               </div>
 
               <div className="email">
-                <i className="bi bi-envelope"></i>
+                <i><EmailIcon/></i>
                 <h4>Email:</h4>
                 <p>anantprakash09901@gmail.com</p>
               </div>
 
               <div className="phone">
-                <i className="bi bi-phone"></i>
+                <i><CallIcon/></i>
                 <h4>Call:</h4>
                 <p>+91 7079698562</p>
               </div>
@@ -38,7 +41,7 @@ const Contact = () => {
           </div>
 
           <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="" method="post" role="form" className="php-email-form">
+            <form className="php-email-form">
               <div className="row">
                 <div className="form-group col-md-6">
                   <label htmlFor="name">Your Name</label>
