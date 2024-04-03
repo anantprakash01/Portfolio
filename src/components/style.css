@@ -1,12 +1,13 @@
 
 .nav-item.active .nav-link {
-  color: #149ddd; /* Change color for active link */
-  font-weight: bold; /* Add bold font for active link */
+  color: #149ddd;
+  font-weight: bold;
 }
+
 /*--------------------------------------------------------------
-# Hero Section
+# home Section
 --------------------------------------------------------------*/
-#hero {
+#home {
   width: 100%;
   height: 100vh;
   background: url("https://t3.ftcdn.net/jpg/00/46/44/02/360_F_46440268_HxTMxCec1EntidRNV0mrw1wMDtMcYk8g.jpg") top center;
@@ -14,7 +15,7 @@
   
 }
 
-#hero:before {
+#home:before {
   content: "";
   background: linear-gradient(
         to bottom ,
@@ -30,14 +31,14 @@
   z-index: 1;
 }
 
-#hero .hero-container {
+#home .home-container {
   position: relative;
   z-index: 2;
   min-width: 300px;
   margin-top: 10%;
 }
 
-#hero h1 {
+#home h1 {
   margin: 60px 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -45,25 +46,25 @@
   color: #fff;
 }
 
-#hero p {
+#home p {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
-#hero p span {
+#home p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
   
 }
-#hero .social-cntr{
+#home .social-cntr{
   color: white;
   z-index: 5;
 }
-#hero .social-cntr .test{
+#home .social-cntr .test{
   font-size: 4rem;
   border: 1px solid white;
   border-radius: 10px;
@@ -72,7 +73,7 @@
   z-index: 5;
   transition: transform .3s ease-out;
 }
-#hero .social-cntr .test:hover{
+#home .social-cntr .test:hover{
   cursor: pointer;
   color: white;
   border: 1px solid black;
@@ -80,18 +81,18 @@
 }
 
 @media (min-width: 1024px) {
-  #hero {
+  #home {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  #home h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #home h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -100,6 +101,34 @@
 .social-cntr{
   width: 450px;
   height: 100px;
+}
+
+
+@media (max-width: 767px) {
+  .social-cntr {
+    width: 350px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .social-cntr {
+    width: 340px; 
+    height: 60px;
+  }
+}
+
+#home .social-cntr .test:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid black;
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  #home .social-cntr .test {
+    font-size: 3rem;
+  }
 }
 
 /* Skills */

@@ -1,9 +1,11 @@
 import React from 'react'
 import me from './imgs/me.jpg'
+import { Fade } from 'react-reveal'
 const About = () => {
   return (
     <>
-         <section id="about"  className="about" style={{paddingTop:"70px"}}>
+      <section id="about"  className="about" style={{paddingTop:"70px"}}>
+      <Fade bottom>
       <div className='container'>
 
         <div >
@@ -11,14 +13,22 @@ const About = () => {
         </div>
 
         <div className="row mx-3 my-5">
+          <Fade left>
           <div className="col-lg-3 " data-aos="fade-right">
             <img src={me} className="img-thumbnail my-2" style={{ width: '230px', height: '300px' }}  alt=""/>
           </div>
+          </Fade>
           <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3 className='underlined'>Java Developer</h3>
+
+            <Fade right><h3 className='underlined'>Java Developer</h3></Fade>
+            
+            <Fade right>
             <p className="fst-italic">
             I am a Java Developer with a focus on full-stack development. My areas of expertise include Java, Spring Boot, React, MySQL, JavaScript and RESTful APIs. I possess a solid understanding of these technologies and leverage my skillset to create robust and scalable solutions for complex problems.
             </p>
+            </Fade>
+            
+            <Fade bottom>
             <div className="row">
               <div className="col-lg-6">
                 <ul>
@@ -38,11 +48,13 @@ const About = () => {
                 </ul>
               </div>
             </div>
+            </Fade>
 
           </div>
         </div>
 
       </div>
+      </Fade>
     </section>
     </>
   )

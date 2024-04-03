@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { Fade } from 'react-reveal';
 
 
 export default function TopContainer() {
@@ -12,11 +13,17 @@ export default function TopContainer() {
   return (
     <div>
       <section
-        id="hero"
+        id="home"
         className="d-flex flex-column justify-content-center align-items-center border border-red" style={{overflow:"hidden"}}
       >
-        <div className="hero-container">
+        <div className="home-container">
+          <Fade left>
+
           <h1>Anant Prakash</h1>
+          </Fade>
+          
+          <Fade right> 
+
           <p>
             I{" "}
             <span><Typewriter 
@@ -28,10 +35,12 @@ export default function TopContainer() {
             deleteSpeed={70}
             
             /></span>
-          {/* <span><Cursor/></span> */}
           </p>
-        </div>
+          </Fade>
+
+          <Fade bottom>
         <div className='social-cntr' id='ic'>
+          
           <a href="https://github.com/anantprakash01"><GitHubIcon className='test' /></a>
           <a href="https://www.linkedin.com/in/anant-prakash-331870192/"><LinkedInIcon className='test' /></a>
           <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FAnant_Pritam_07"><TwitterIcon className='test'/></a>
@@ -43,6 +52,12 @@ export default function TopContainer() {
           
           {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
         </div>
+        </Fade>
+
+
+        </div>
+        
+
       </section>
     </div>
   )
